@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #000; font-family: Montserrat-Black;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="home">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!focus {background-color: #000000; color: #fff; border-radius: 5px; font-family: &quot;Montserrat&quot;;}  QPushButton:focus {background-color: #282828; color: #b3b3b3; border-radius: 5px; font-family: &quot;Montserrat&quot;;}</string>
+    </property>
+    <property name="text">
+     <string>Главная             </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="search">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!focus {background-color: #000000; color: #fff; border-radius: 5px; font-family: &quot;Montserrat&quot;;}  QPushButton:focus {background-color: #282828; color: #b3b3b3; border-radius: 5px; font-family: &quot;Montserrat&quot;;}</string>
+    </property>
+    <property name="text">
+     <string>Поиск                </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="my_music">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!focus {background-color: #000000; color: #fff; border-radius: 5px; font-family: &quot;Montserrat&quot;;}  QPushButton:focus {background-color: #282828; color: #b3b3b3; border-radius: 5px; font-family: &quot;Montserrat&quot;;}</string>
+    </property>
+    <property name="text">
+     <string>Моя музыка       </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pod">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>410</y>
+      <width>841</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #181818; border-color: #fff; border-style:outset; border-width: 1px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="play_pause">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>450</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 20px; background-color: #1db954;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_track">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>450</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 20px; background-color: #1db954;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previous_track">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>450</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 20px; background-color: #1db954;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="record">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #1db954; border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>450</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #181818; color: #fff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tab">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>-50</y>
+      <width>471</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #121212;  border-width: 0px; border-color: #121212;</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab1">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QScrollArea" name="scroll">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>441</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:10px; border-radius: 10px;</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>441</width>
+         <height>391</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab2">
+     <attribute name="title">
+      <string>Страница</string>
+     </attribute>
+     <widget class="QLineEdit" name="search_line">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QLineEdit { border-radius: 4px; color:rgb(0, 0, 0); background-color: #f7fdf9; } QLineEdit:focus { border-style:outset; border-width:4px; border-radius: 4px;  border-color: #1db954;  color: #f7fdf9; background-color: #181818; } </string>
+      </property>
+      <property name="placeholderText">
+       <string>автор, название</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="search_btn">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>50</y>
+        <width>93</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px; background-color: #1db954;</string>
+      </property>
+      <property name="text">
+       <string>Поиск</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="search_scroll">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>441</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:10px; border-radius: 10px;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>441</width>
+         <height>341</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab3">
+     <property name="styleSheet">
+      <string notr="true">border-width:10px; border-radius: 10px;</string>
+     </property>
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QScrollArea" name="my_music_scroll">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>441</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>441</width>
+         <height>401</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>753</x>
+      <y>7</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!hover {background-color: #000;} QPushButton:hover {background-color: #d71526;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="role_up">
+    <property name="geometry">
+     <rect>
+      <x>703</x>
+      <y>7</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:!hover {background-color: #000;} QPushButton:hover {background-color: #181818;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>655</x>
+      <y>-20</y>
+      <width>10</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #000; color: #fff;</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>470</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #181818; color: #fff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>420</y>
+      <width>481</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider{
+                background: #181818;
+            }
+            QSlider::groove:horizontal {  
+                height: 10px;
+                margin: 0px;
+                border-radius: 5px;
+                background: #B0AEB1;
+            }
+            QSlider::handle:horizontal {
+                background: #fff;
+                border: 1px solid #E3DEE2;
+                width: 17px;
+                margin: -5px 0; 
+                border-radius: 8px;
+            }
+            QSlider::sub-page:qlineargradient {
+                background: #1db954;
+                border-radius: 5px;
+            }</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sound">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>420</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider{
+                background: #181818;
+            }
+            QSlider::groove:horizontal {  
+                height: 10px;
+                margin: 0px;
+                border-radius: 5px;
+                background: #B0AEB1;
+            }
+            QSlider::handle:horizontal {
+                background: #fff;
+                border: 1px solid #E3DEE2;
+                width: 17px;
+                margin: -5px 0; 
+                border-radius: 8px;
+            }
+            QSlider::sub-page:qlineargradient {
+                background: #1db954;
+                border-radius: 5px;
+            }</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>tab</zorder>
+   <zorder>home</zorder>
+   <zorder>search</zorder>
+   <zorder>my_music</zorder>
+   <zorder>pod</zorder>
+   <zorder>record</zorder>
+   <zorder>label</zorder>
+   <zorder>exit</zorder>
+   <zorder>role_up</zorder>
+   <zorder>line</zorder>
+   <zorder>play_pause</zorder>
+   <zorder>previous_track</zorder>
+   <zorder>next_track</zorder>
+   <zorder>label_2</zorder>
+   <zorder>slider</zorder>
+   <zorder>sound</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
